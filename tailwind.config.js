@@ -4,12 +4,20 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      mono: ["Space Mono", "monospace"],
+    },
+    extend: {
+      fontSize: {
+        "dynamic-small": "clamp(1rem, 5vw, 10rem)",
+        "dynamic-xl": "clamp(3rem, 10vw, 10rem)",
+      },
+    },
   },
   plugins: [],
-}
+};
