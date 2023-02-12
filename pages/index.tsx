@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      {/* test */}
       <Head>
         <title>James Whitney</title>
         <meta name="description" content="James Whitney's personal website" />
