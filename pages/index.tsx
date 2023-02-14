@@ -1,116 +1,29 @@
 import Head from "next/head";
-import Link from "next/link";
+
+import Header from "../components/header";
+import About from "../components/about";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
     <>
-      {/* test */}
       <Head>
         <title>James Whitney</title>
         <meta name="description" content="James Whitney's personal website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/avatar_3_round.png" />
       </Head>
 
-      <main className="">
-        <div className="flex h-screen flex-col">
-          <div className=" m-1 h-20 flex-none rounded-3xl bg-red-600"></div>
-
-          <div className="h-20 flex-grow bg-green-600">
-            <div className="m-1 flex-grow rounded-3xl bg-green-200">
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
-              <p>Center</p>
+      <div className="flex h-screen flex-col">
+        <Header></Header>
+        <div className="grow">
+          <div className="flex justify-center">
+            <div className="max-w-screen-lg p-8">
+              <About></About>
             </div>
           </div>
-
-          <div className="sticky inset-x-0 bottom-0 m-1 h-20 flex-none rounded-3xl bg-blue-600"></div>
         </div>
-
-        {/* <div className="sticky top-0 m-1 h-20 rounded-3xl bg-red-600"></div>
-
-        <div className="flex">
-          <div className="m-1 w-24 rounded-3xl bg-green-600">1</div>
-          <div className="m-1 flex-grow rounded-3xl bg-green-200">
-            <p>Center</p>
-            <p>Center</p>
-            <p>Center</p>
-            <p>Center</p>
-            <p>Center</p>
-          </div>
-          <div className="m-1 w-24 rounded-3xl bg-green-600">3</div>
-        </div> */}
-
-        {/* <div className="sticky inset-x-0 bottom-0 m-1  h-20 rounded-3xl bg-blue-600"></div> */}
-      </main>
+        <Footer></Footer>
+      </div>
     </>
   );
 }
