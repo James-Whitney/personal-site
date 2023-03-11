@@ -6,19 +6,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // fontFamily: {
-    //   mono: ["Space Mono", "monospace"],
-    // },
-    // height: (theme) => ({
-    //   auto: "auto",
-    //   ...theme("spacing"),
-    //   full: "100%",
-    //   screen: "calc(var(--vh) * 100)",
-    // }),
     extend: {
       fontSize: {
         "dynamic-small": "clamp(1rem, 5vw, 10rem)",

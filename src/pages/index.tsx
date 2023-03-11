@@ -1,8 +1,10 @@
 import Head from "next/head";
+
 import Image from "next/image";
 import twitterIcon from "@/public/twitter.png";
 import githubIcon from "@/public/github.png";
 import emailIcon from "@/public/email.png";
+import { useState, useEffect } from "react";
 
 function Name() {
   return (
@@ -134,8 +136,6 @@ function Spinners() {
     </>
   );
 }
-
-import { useState, useEffect } from "react";
 
 function DetectIsFocused() {
   // Shamelessly stolen from stackoverflow, flips the state of the page when
