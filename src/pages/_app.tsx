@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 
-import { Source_Code_Pro } from "@next/font/google";
+import { Inter } from "@next/font/google";
 
-const customFont = Source_Code_Pro({
-  weight: "400",
+const customFont = Inter({
+  weight: "variable",
   subsets: ["latin"],
 });
 

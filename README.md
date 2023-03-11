@@ -36,3 +36,32 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Notes:
+
+## Fonts
+
+- vercel font - [Inter](https://fonts.google.com/specimen/Inter?preview.size=95&query=inter&noto.script=Latn)
+- excalidraw font - [virgil](https://virgil.excalidraw.com/)
+- fun fantasy - [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative?preview.size=95&category=Display&sort=date&noto.script=Latn&query=Cinzel)
+- Architect looking font - [Aboreto](https://fonts.google.com/specimen/Aboreto?preview.size=95&category=Display&sort=date&noto.script=Latn)
+
+Scalability.
+
+    Infrasture should be able to scale up or down as needed to meet demand.
+
+Reliability.
+
+    Services should be highly reliable and available, with built-in redundancy and failover mechanisms to ensure that services are always accessible.
+
+Security.
+
+    Cloud systems should be designed with security in mind, including robust access controls, encryption, and other measures to protect data and resources from unauthorized access or attack.
+
+Flexibility.
+
+    Cloud systems should be flexible enough to support a wide range of applications and workloads, including both traditional enterprise applications and newer, cloud-native applications.
+
+Cost-efficiency.
+
+    Cloud systems should be designed to optimize costs, including through the efficient use of computing resources and storage, and by taking advantage of pay-per-use pricing models and other cost-saving features.
