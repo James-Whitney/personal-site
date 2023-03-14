@@ -56,7 +56,7 @@ function About() {
             </a>
           </li>
           <li className="py-1">
-            Graduated from Cal Poly in 2018 with a bachelors in{" "}
+            Graduated from Cal Poly in 2018 with a bachelor&apos;s in{" "}
             <a className="underline decoration-green-700" href="https://www.calpoly.edu/major/computer-engineering">
               Computer Engineering
             </a>
