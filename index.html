@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Whitney</title>
+    <meta name="description" content="James Whitney's personal website" />
+    <link rel="icon" href="public/avatar_3_round.png" id="favicon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes scrollText3 {
+        5%,
+        33.3% {
+          transform: translateY(-25%);
+        }
+        38.3%,
+        66.6% {
+          transform: translateY(-50%);
+        }
+        71.6%,
+        100% {
+          transform: translateY(-75%);
+        }
+      }
+      @keyframes scrollText5 {
+        5%,
+        25% {
+          transform: translateY(-20%);
+        }
+        30%,
+        50% {
+          transform: translateY(-40%);
+        }
+        55%,
+        75% {
+          transform: translateY(-60%);
+        }
+        80%,
+        100% {
+          transform: translateY(-80%);
+        }
+      }
+      .animate-scroll-text-3 {
+        animation: scrollText3 10s ease-in-out infinite;
+      }
+      .animate-scroll-text-5 {
+        animation: scrollText5 10s ease-in-out infinite;
+      }
+      .bg-clip-text {
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+      .text-transparent {
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <div class="absolute inset-0">
+      <div
+        class="container mx-auto flex h-full max-w-screen-sm flex-col place-content-center md:max-w-screen-md lg:max-w-screen-lg"
+      >
+        <!-- Name Section -->
+        <div class="text-center font-black">
+          <div class="text-7xl sm:text-9xl md:text-9xl lg:text-9xl">
+            <p
+              class="bg-gradient-to-tr from-cyan-500 to-cyan-100 bg-clip-text transition duration-300 ease-in-out hover:-translate-y-1 hover:text-transparent"
+            >
+              JAMES
+            </p>
+            <p
+              class="bg-gradient-to-br from-amber-500 to-amber-300 bg-clip-text transition duration-300 ease-in-out hover:-translate-y-1 hover:text-transparent"
+            >
+              WHITNEY
+            </p>
+          </div>
+        </div>
+
+        <!-- Socials Section -->
+        <div class="flex justify-center py-3">
+          <a
+            class="px-6 duration-200 ease-in-out hover:-translate-y-1"
+            href="https://github.com/James-Whitney"
+          >
+            <img
+              class="invert"
+              src="public/github.png"
+              alt="Github Icon"
+              width="45"
+            />
+          </a>
+          <a
+            class="px-6 duration-200 ease-in-out hover:-translate-y-1"
+            href="mailto:contact@JasWhitney.com"
+          >
+            <img
+              class="invert"
+              src="public/email.png"
+              alt="Email Icon"
+              width="45"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Focus detection for favicon switching
+      let isFocused = true;
+
+      function handleFocus() {
+        isFocused = true;
+        updateFavicon();
+      }
+
+      function handleBlur() {
+        isFocused = false;
+        updateFavicon();
+      }
+
+      function updateFavicon() {
+        const favicon = document.getElementById("favicon");
+        favicon.href = isFocused
+          ? "public/avatar_3_round.png"
+          : "public/avatar_3_round_upside.png";
+      }
+
+      window.addEventListener("focus", handleFocus);
+      window.addEventListener("blur", handleBlur);
+    </script>
+  </body>
+</html>
