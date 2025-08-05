@@ -4,6 +4,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "files.exclude": {
         // "**/node_modules/": true,
-        "**/*.d.ts": true,
+        // "**/*.d.ts": true,
     }
 }
